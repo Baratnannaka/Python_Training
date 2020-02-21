@@ -1,0 +1,18 @@
+constracturs in python
+    x=PythonTraining("Parker","White NoteBook")
+  
+  ex:1
+    #program to demonstrate counstracture
+    class PythonTraining:
+        def __init__(self,a,b) :
+            print ('i am constracture')
+            self.pen=a;
+            self.book=b;
+
+        def display(self):
+            print('my book is'+self.book);
+            print('my pen is'+self.pen)
+   
+    #object creation
+    x = PythonTraining('Parker','White NoteBook');   
+    x.display();

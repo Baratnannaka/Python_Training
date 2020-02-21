@@ -1,0 +1,11 @@
+DECTIONARIES IN PYHTON:
+ x={'cuntry':'india','myage':26}
+ print (['country'])
+
+ #adding an elimet:
+   x['state']='ts'
+ #remove
+   del x['state']
+
+   print(x)
+   del x  

@@ -1,0 +1,94 @@
+veribels & methods in python:
+
+ class PythonTraining:
+   def bokkwriting(self):--->instance method
+    print('book writing code');
+
+   @staticmethod---->decorator
+   def boardreading():--->static method
+    print('book writing code');
+
+   @classmethod ---> decorator
+   def boardreading(cls):---> class method
+    print('book writing code');
+    ex:1
+      #class veribles and instance methods 
+
+      class PythonTraining:
+        board = "white board"; # class variable
+
+        def bookwriting(self,name): #instance methos
+            print('i am writing in my book:'+str(name))
+        def listening(self,name):  #instance method
+            print('i am listening perfectly: '+str(name));
+        def understanding(self,percentage) :  #instance method
+            print('i understood the class :'+str(percentage));
+
+      x = PythonTraining(); #object x
+      x.bookwriting('X');          
+
+      y = PythonTraining(); #object y     
+      y.bookwriting('Y);
+      y.understanding('80% : Y');
+    ex:2
+      # instance veriables
+      class PythonTraining:
+        board = "white board"; # class variable
+
+        def bookwriting(self,name): #instance methos
+            print('i am writing in my book:'+str(name))
+        def listening(self,name):  #instance method
+            print('i am listening perfectly: '+str(name));
+        def understanding(self,percentage) :  #instance method
+            print('i understood the class :'+str(percentage));
+
+      x = PythonTraining(); #object x
+      x.pen="parker"; #instance variables
+      x.book="rule";  #instance variable
+      x.bookwriting(x.pen);          
+
+      y = PythonTraining(); #object y     
+      y.bookwriting('Y);
+      y.understanding('80% : Y');
+
+ ex:3
+     # static/class methods
+     class PythonTraining:
+        board = "white board"; # class variable
+
+        def bookwriting(self,name): #instance methos
+            print('i am writing in my book:'+str(name))
+        def listening(self,name):  #instance method
+            print('i am listening perfectly: '+str(name));
+        def understanding(self,percentage) :  #instance method
+            print('i understood the class :'+str(percentage));
+
+        @staticmethod
+        def boardreading(): #static method
+            print ('all of you please read the board');
+
+      x = PythonTraining(); #object x
+      x.pen="parker"; #instance variables
+      x.book="rule";  #instance variable
+      x.bookwriting(x.pen);          
+
+      y = PythonTraining(); #object y     
+      y.bookwriting('Y);
+      y.understanding('80% : Y');
+      print(PythonTraining.board);
+      PythonTraining.boardreding();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+PYTHON OBJECTS
+
+3 Charecteristics:
+
+- Identifier
+- Type
+- Value

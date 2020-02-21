@@ -1,0 +1,94 @@
+Sequences in python
+
+1. Srings
+2. Lists
+3. Tuples
+
+* String:
+  Collection of charecters 
+  s='bharath'
+  s="bharath"
+  1)how to access the content of a String
+  s="this is bharath"
+  s[0]--> 1 st char
+  s[0:5]-->returns the substring b/w 0 index to 4
+  s[5:]---> returns all characters startin from 5
+  s[:5]--->returns all the characters from index to 4
+  
+  2)string indexing:
+  s="abcd"
+
+  0 1 2 3
+  -4 -3 -2 -1
+
+  Length --> len(s)
+  Maximum --> max(s)
+  minimum --> min(s)
+ 
+  3)Build in Functions
+   string.capitalize()
+   string.center(width)
+   endswith(substr,beg=0,end=len(string))
+   find(substr,beg,end)
+   isalnum()
+   isalpha()
+   isdecimal()
+   isdigit()
+   islower()
+
+
+* List:
+  is stores set of objects
+  s=[1,2,"bharath",9.9]
+  add,remove,sort,reverse
+  s=[1,2,[1.1,2.2]]
+
+  Retrive elements:
+  s[0]-->
+  s[0:3]--> 0-2 index
+  s[2][0]--> 1.1
+
+  Update elements:
+  s=[1,2,3,[1,2]]
+
+  s[1]=10 {2-->10}
+
+  Remove element:
+  del s[2]
+  del s {to remove list}
+  
+  operators in list:
+  s=[10,20]
+  s1=[10,30]
+  s2=[10,20]
+  Standard==<>
+  s==s1
+  s>s1
+  s<s1
+
+  sequence operators:
+  s[0]
+  s[0:3]
+
+  membership operators:
+  in, not in
+   10 in s
+   10 not s
+
+  concatenation:
+   s+s3
+
+  Repitition Operator * : 
+  s*2 {s prints two time}
+
+  Built in Methods in list:
+  list:append(obj)
+  list.count(obj)
+  list.index(obj)
+  list.insert(index,obj)
+  list.reverse()
+
+* Tuples  ()
+  -> Read only List
+  s=(1,2,3,4)
+

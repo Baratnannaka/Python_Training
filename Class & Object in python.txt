@@ -1,0 +1,24 @@
+Class & Object in python
+  class: Provides The Definition of a class
+  Object: instance of a class
+ Syntax:
+  class classname(base class):
+   'documentation line'
+   class suite or code
+ class         --> keyword
+ classname     --> name of the class
+ base class    --> name of base class / Object
+ documentation --> to add documentation
+ class suite   --> variables and methods
+ 
+ ex:
+  class BestMobile(object):
+   'This Class defines the best mobile objects'
+  class suite or code
+  creating object:
+  syntax:
+    objectname = classname()
+  example:
+   samsungX = BestMobile()
+   appleY = BestMobile()
+   

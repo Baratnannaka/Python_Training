@@ -1,0 +1,7 @@
+Range function:
+
+for loop:
+
+ range(5) --> 0-4
+ range(5,10) --> 5-9
+ range(0,10,3) --> 0,3,6,9

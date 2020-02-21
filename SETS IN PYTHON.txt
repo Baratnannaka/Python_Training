@@ -1,0 +1,39 @@
+SETS IN PYTHON:
+
+ Set is an Inordered collection
+ with no duplicate elements.
+ 
+ *How To Create Set:
+    s1 = {1,'a',4.5}
+    s2 = set([4,'hello',10.6])
+
+Ex:1
+
+ s1 = {1,'a',5.6};
+ s2 = set(["hello",4,'hi',4.7]);
+ print(s1);
+ print(s2);
+
+ #add a single element to the set
+ s1.add(5)
+ print(s1);
+
+ #add multiple elements or set to the existing set
+ s2 = {7,'a',7.9};
+ s1.update(s2)
+ 
+ #remove an element from set
+ s1.remove(1);
+ 
+ s1.discard(10);
+
+ #length of a set
+ print (len(s1))
+
+ #union(|), intersection(&), difference(-), symetric _difference(^)
+ print (s1 | s2);
+ print (s1 & s2);
+ print (s1 - s2);
+ print (s1 ^ s2);
+ 
+ 

@@ -1,0 +1,59 @@
+Inheritance:
+    Creating new class from already existing class.
+       (or)
+    Object of one class acquires the properties of object of another class
+
+  Ex:1
+    # single Inheritance
+    class Grandparent:
+        def __init__(self,h):
+            self.house=h;
+        def displayGrandparentproperties(self):
+            print('grand parent house is:'+self.house);
+
+
+    class parent(Grandparent):
+        def __init__(self,h,c):
+            self.car=c;
+            super().__init__(h);
+        def displayparentproperties(self):
+            print('parenr home is:'+self.house);
+            print('parent car is:'+self.car);
+
+    sub1 = parent('Duplex House','Honda city');
+    sub1.displayparentproperties();
+  EX:2
+   #Multilevel Inheritance
+
+   class Grandparent:
+        def __init__(self,h):
+            self.house=h;
+        def displayGrandparentproperties(self):
+            print('grand parent house is:'+self.house);
+
+
+    class parent(Grandparent):
+        def __init__(self,h,c):
+            self.car=c;
+            super().__init__(h);
+        def displayparentproperties(self):
+            print('parenr home is:'+self.house);
+            print('parent car is:'+self.car);
+    
+    
+    class child(parent):
+        def __init__(sleh,h,c,b):
+            self.bike=b;
+            super().__init__(h,c);        
+
+        def displaychildproperties(self):
+            print('child house is:'+self.house);
+            print('child car is:'+self.car);
+            print('child bike is:'+self.bike);
+
+    sub1 = child('Duplex House','Honda city','glamar');
+    sub1.displayparentproperties();
+    sub1.displayGrandparentproperties();
+     sub1.displaychildproperties();
+
+     

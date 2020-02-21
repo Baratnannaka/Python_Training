@@ -1,0 +1,46 @@
+FILES IN PYTHON
+  Syntax:
+   open(file name,access mode, buffering)
+  example:
+    obj = open("sample.txt",'r',-1)
+  
+  access modes in file concept in python:
+    f=open("samole.txt",r,-1)
+      read mode(r) -IOerror
+      write mode(w): 
+      append mode(a):
+      + - read-write
+      b-binary rb,wb,ab
+  buffering:
+   0 - no buffering
+   1 - line buffering
+   -ve -system defaults
+   +ve -buffer size
+  
+  #read:
+    raed(-1)
+    readline()- reads the entire line
+    readlines() - reads all the lines in a file
+
+    ex:
+     f = open("sample.txt",'r')
+     a = f.read(5) # reads 5 bytes and stored it in variable a
+     f.close();
+     print (a)
+
+  #write:
+     write(content)
+     writelines(listcontent)
+
+     ex:
+       f = open("sample.txt",'w')
+       f.write('hello')
+       f.close()
+
+  #append:
+    ex:
+      f=open("sample.txt",'a')
+      f.write('bharath')
+      f.close()
+              
+

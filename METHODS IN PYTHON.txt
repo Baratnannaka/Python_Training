@@ -1,0 +1,30 @@
+METHODS IN PYTHON
+    Method = A Function Inside a Class
+
+ Process to execute a method:
+  1) Define a class with required method definitions
+  2) Creating Object of the class
+  3) Invoke the method by using Object
+   
+ HOW TO CREATE A METHOD:
+   class classname (base class):
+    'documentation line'
+
+     def methodname (self):
+       method code
+
+ To create methods in PYTHON
+    1) create a class and define method
+    2) creating object of that class
+    3) invoke the method
+
+
+ ex:
+ #program to demonstate class and method
+
+ class pythontraining(object) : 
+    def listen(self,name) :
+      print ('i am an object and i am listening'+str(name));   
+ #creating object or instance
+ x =pythontraining(); #contractucter    
+ x.listen(10); # invoke or call

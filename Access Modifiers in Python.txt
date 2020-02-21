@@ -1,0 +1,45 @@
+Access Modifiers in Python:
+
+   def __init__(self,n,b,p):
+       self.name = n; --->public (any one can access from anywhere)
+       self._book = b; --->protected (same class & sub classes)
+       self.__pen = p; --->private (same class)
+
+ 
+ ex:1
+
+ #program to demonstrate python access Modifiers
+
+ class PythonTraining :
+    def __init__(self,p,b):
+        self.pen=p; #public
+        self.book=b;
+ 
+ x = PyhtonTraining('parker","white note book");
+ print (x.pen);
+ 
+ex:2
+
+  class PythonTraining :
+    def __init__(self,p,b):
+        self._pen=p; #protected
+        self.book=b;
+ 
+ x = PyhtonTraining('parker","white note book");
+ print (x._pen);
+
+
+ex:3
+
+  class PythonTraining:
+    def __init__(self,p,n); #protected
+        self.__pen=p;
+        self.book=b;
+    def setpen(self,p):
+        self.__pen=p;
+    def getpen(self):
+        return self.__pen;
+   x=PythonTraining("parker","white notebook");
+   x.setpen("reynolds");
+   print (x.getpen());     
+   
